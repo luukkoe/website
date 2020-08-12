@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Luukkonen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" class="particles-js"></script>
+    <script>
+        particlesJS.load('particles', 'particles.json', function(){
+            console.log('particles.json loaded.')
+        });
+    </script>
+    <header>
+        <div id="particles"></div>
+        <span>
+            <h1>Emma Luukkonen</h1>
+        </span>
+        <div class = "links"> 
+            <ul>
+                <li>
+                    <a href= "https://www.linkedin.com/in/emma-luukkonen/"><i class="fa fa-linkedin-square" aria-hidden="true">
+                    <!---   <p>LinkedIn</p>  -->
+                    </i></a>
+                </li>
+                <li>
+                    <a href= "mailto:luukkoe@umich.edu"><i class="fa fa-github-square" aria-hidden="true">
+                <!----   <p>GitHub</p>  -->
+                    </i></a>
+                </li>
+                <li>
+                    <a href= "mailto:luukkoe@umich.edu"><i class="fa fa-envelope" aria-hidden="true">
+                    <!----   <p>Email</p>   -->
+                    </i></a>
+                </li>
+                <li>
+                    <a href="Emma_Luukkonen_Resume_2019.pdf"><i class="fa fa-file-text" aria-hidden="true">
+                <!----     <p>Resume</p>  -->
+                    </i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="page-content">
+        <section>
+            <div>
+                <h2>Who I am</h2>
+                <p>I am a solution-oriented computer science student at the University of Michigan, 
+                    and for me, success lies in innovation.</p>
+            </div> 
+        </section>
+        <section class="intro" data-aos="fade-right"> 
+            <div>
+                <h2>Hello, World!</h2>
+                <p>I'm Emma, a solution-oriented <span id = "engineer">software engineer</span>
+                    and <span id = "student">computer science student</span> at the 
+                    <span id = "um">University of Michigan</span> in Ann Arbor, MI. I believe innovation in technology has the 
+                    potential to change lives for the better, and for me, success lies in this innovation.
+                    I enjoy creating and contributing to programing projects involving <span id = "ai">artificial intelligence</span>,
+                    <span id = "ml">machine learning</span>, and <span id = "auto">automation</span>. My most recent such project was 
+                    creating an AI driven mancala single-person game play. 
+                </p>
+            </div>
+          <!--- <img src="me.JPG" alt="Me">  -->
+        </section>
+        <section>
+            <div data-aos="fade-left">
+            <h2>My Experience</h2> 
+            <!----
+                <div class="column1">
+                    <ul>
+                        <li><img src="Ally.png" alt="Ally Financial"></li>
+                        <li><img src="ProModel.png" alt="ProModel Corporation"></li>
+                        <li><img src="UofM.png" alt="University of Michigan"></li>
+                    </ul>
+                </div>  -->
+                <div class="column2">
+                    <ul>
+                        <li>
+                            <p>
+                                As an Artificial Intelligence Operations (AIOps) intern at Ally Finanical,
+                                I created an automation framework for capacity reporting by synthesizing 
+                                multiple data reports and ultimately demonstrating this data in Power BI.
+                                This automation streamlined Ally's storage growth by creating a predictive 
+                                model that will demonstrate when more storage must be bought.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                At ProModel Corporation, I developed automated web-app testing in C# using 
+                                Selenium Webdriver, then scheduled daily reports of failed tests through TeamCity.
+                                Later, I contributed to two customer-facing web applications, using C#, HTML/CSS, 
+                                and Markdown.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                As a Computer Science student at the University of Michigan, my coursework is focused
+                                around data structures and algorithms, and I have taken classes in artificial 
+                                intelligence, computer architecture, and discrete mathematics. This year I plan to take
+                                additional courses in operating systems and web systems, and my expected graduation is 
+                                April 2022.
+                            </p>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </section> 
+        <section>
+            <div data-aos="fade-right">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href= "https://www.linkedin.com/in/emma-luukkonen/"><i class="fa fa-gamepad" aria-hidden="true">
+                        <h2>Mancala AI</h2> 
+                        <p>
+                            I created a single and multi player Mancala implementation, using the Minimax algorithm with alpha-beta pruning
+                            for an AI-based single player response.
+                        </p>
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href= "https://www.linkedin.com/in/emma-luukkonen/"><i class="fa fa-line-chart"aria-hidden="true">
+                        <h2>Log Manager</h2>
+                        <p>
+                            Program that parses error log files by reading in the file, then prompting the user for search queries
+                            based on timestamp, category, or keyword.
+                        </p>
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href= "https://www.linkedin.com/in/emma-luukkonen/"><i class="fa fa-puzzle-piece" aria-hidden="true">
+                        <h2>Sudoku Solver</h2>
+                        <p>
+                            Implemented the AC-3 algorithm to solve sudoku puzzles based on arc-consistency between neighboring 
+                            squares. Lorem ispum bfewbnf
+                        </p>
+                        </i></a>
+                    </li>
+                </ul>
+                <!----
+                <ul>
+                    <li>Mancala AI</li>
+                    <li>Stock Trading</li>
+                    <li>Sudoku Solver</li>
+                </ul>  -->
+            </div>
+        </section>
+        <section class="skills">
+            <div data-aos="fade-left">
+                <h2>My Skillset</h2>
+                <div>
+                    <h3>Tools: </h3>
+                    <ul>
+                        <li>Selenium Webdriver</li>
+                        <li>Xcode</li>
+                        <li>Visual Studio</li>
+                        <li>Markdown</li>
+                        <li>GitHub</li>
+                        <li>BigPanda</li>
+                        <li>Power BI</li>
+                        <li>PowerShell</li>
+                        <li>REST API</li>
+                        <li>VMWare</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Languages (most to least familiar): </h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 400,
+        duration: 700,
+        once: false
+    });
+  </script>
+</body>
+</html>
