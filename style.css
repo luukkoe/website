@@ -16,7 +16,7 @@ body {
     background-color: #437993;
     background-image:url("nasa_sky.jpg");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
     background-repeat: no-repeat;
     position: fixed;  
     
@@ -100,6 +100,8 @@ header a:hover p {
 a, a:visited {
     color: inherit;
 }
+
+
 /* Refresh page animation */
 @keyframes open {
     from {
@@ -131,10 +133,10 @@ section h2 {
     font-size: 2em;
 }
 section p {
-    text-align: center;
+    text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     padding: 2% 2% 5% 2%;
-    margin: 0;
+    margin: 0 15px;
     font-size: 1.5em;
 }
 /*
@@ -171,9 +173,7 @@ section:nth-of-type(1) div {
     opacity: 0;
     border: none;
 } 
-section:nth-of-type(2) > div {
-    
-}
+
 /*
 section:nth-of-type(1) div h2 {
     animation: typing1 3s;
@@ -189,7 +189,7 @@ section:nth-of-type(3) > div ul li {
 section:nth-of-type(3) > div ul li p {
     text-align: left; 
     font-size: 1.25em;
-    margin: 15px;
+    margin: 15px 15px 15px 0;
     padding: 0;
 }
 section:nth-of-type(3) > div img {
@@ -221,6 +221,11 @@ section:nth-of-type(4) > div a p {
     text-align: left;
     margin: 0 0 30px 0;
 }
+
+section:nth-of-type(5) > div {
+    padding-bottom: 20px;
+}
+
 /* Sections */
 /*
 section div ul {
@@ -288,12 +293,13 @@ section div ul li img {
     margin: 15px;
 }
 .skills ul {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
 }
 .skills ul li {
+    transition: 0.5s;
     text-align: center;
     display: inline-block;
     background: black;
@@ -306,48 +312,123 @@ section div ul li img {
 .skills ul li:hover {
     transition: 0.5s;
     color: black;
-    background: #b5b5b5;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: #b5b5b5; */
     border: 2px solid black;
 }
+/*
 #promodel {
     text-decoration: none;
-    color: #cc0000;
     font-weight: bold;
 }
 #ally {
     text-decoration: none;
-    color: #680087;
     font-weight: bold;
 }
 #um {
     text-decoration: none;
-    color: #002d80;
     font-weight: bold;
 }
 #auto {
     font-weight: bold;
-    color: red;
 }
 #student {
     font-weight: bold;
-    color: #00d0ff
 }
 #ai {
     font-weight: bold;
-    color: #03d100
 }
 #ml {
     font-weight: bold;
-    color: #ff6200
 }
 #engineer {
     font-weight: bold;
-    color: blue;
-}
+} */
 section div p a:hover {
     color: black;
 }
 /* Mobile view */
-@media(max-width: 600px) {
 
+@media only screen and (max-width: 801px) {
+    section:nth-of-type(2) > div p {
+        font-size: 20px;
+    }
+    section:nth-of-type(3) > div ul li p {
+        font-size: 15px;
+    }
+    section:nth-of-type(4) > div ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+
+    font-size: 35px;
+    display: inline-block;
+    color: black;
+    transition: .5s;
+    backface-visibility: hidden;
+    }
+    section:nth-of-type(4) > div ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    section:nth-of-type(4) > div a h2 {
+        font-size: 20px;
+    }
+    section:nth-of-type(4) > div a p {
+        font-size: 15px;
+        width: 150px;
+        text-align: left;
+        margin: 0 0 30px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header div ul {
+        top: 60%;
+        left: 50%;
+        bottom: 40%;
+    }
+    header div ul li {
+        font-size: 30px;
+        margin: 10px 12px;
+    }
+    header div ul li:hover {
+        color: black;
+        font-size: 30px;
+        margin: 10px 12px;
+        padding: 0;
+    }
+    section:nth-of-type(2) > div p {
+        margin: 0 15px;
+    }
+    section:nth-of-type(3) > div ul li p {
+        font-size: 15px;
+        margin: 0 15px 10px 0;
+        padding: 0;
+    }
+    section:nth-of-type(4) > div ul li {
+        list-style: none;
+        display: block;
+        padding: 10px 50px 0 50px;
+        margin: 0;
+    
+        font-size: 35px;
+        display: inline-block;
+        color: black;
+        transition: .5s;
+        backface-visibility: hidden;
+    }
+    section:nth-of-type(4) > div a h2 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    section:nth-of-type(4) > div a p {
+        font-size: 15px;
+        width: 250px;
+        text-align: left;
+        margin: 0 0 10px 0;
+    }
 }
